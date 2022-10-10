@@ -1,0 +1,46 @@
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="css/formulario.css">
+   </head>
+   <body>
+      <form class="contact_form" action="" id="contact_form" runat="server"> 
+         <div> 
+         <ul> 
+         <li> 
+         <h2>Contactos</h2> 
+         <span class="required_notification">* Datos requeridos</span> 
+         </li> 
+         <li> 
+         <label for="name">Nombre:</label> 
+         <input type="text" name="name" id="names" placeholder="Dijite su nombre aqui"  /> 
+         </li> 
+         <li> 
+         <label for="email">Email:</label> 
+         <input type="email" name="email" id="email" placeholder="nombre@algo.com"  /> 
+         <span class="form_hint">Formato correcto: "ejemplo@algo.com"</span> 
+         </li> 
+         <li> 
+         <label for="website">Sitio web:</label> 
+         <input type="url" name="website" id="websites" placeholder="http://algo.com"  
+         pattern="(http|https)://.+" /> 
+         <span class="form_hint">Formato correcto: "http://algo.com"</span> 
+         </li> 
+         <li> 
+         <label for="message">Mensaje:</label> 
+         <textarea name="message" id="messages" cols="40" rows="6" ></textarea>
+      </li> 
+            <div id="messageError"  style="text-align:center ;"></div>
+      <li> 
+      <button class="submit" id="enviarForm" type="submit">Enviar mensaje</button> 
+      </li> 
+      </ul> 
+      </div> 
+      </form>
+   </body>
+   <script src="js/formulario.js"></script>
+   </html>
